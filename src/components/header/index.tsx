@@ -28,15 +28,15 @@ export function Header() {
                 <Image
                   src="/image.webp"
                   alt="Logo"
-                  width={85}
-                  height={85}
+                  width={120}
+                  height={120}
                 ></Image>
               </Link>
             </div>
             <nav className={`nav ${top && "nav-fixed"}`}>
-              <Link href="/">Home</Link>
-              <Link href="/#servicos">Serviços</Link>
-              <Link href="/#contatos">Contatos</Link>
+              <Link href="/" className="text-gradient">Home</Link>
+              <Link href="/#servicos" className="text-gradient">Serviços</Link>
+              <Link href="/#contatos" className="text-gradient">Contatos</Link>
             </nav>
           </div>
         </div>

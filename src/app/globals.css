@@ -68,3 +68,25 @@ a {
     transform: translateY(-12px);
   }
 }
+
+.banner {
+  position: relative;
+  background-image: url("/banner-05.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.4));
+  backdrop-filter: blur(8px);
+  z-index: 1;
+}
