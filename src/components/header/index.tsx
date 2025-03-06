@@ -1,8 +1,8 @@
 "use client";
-import { useState, useEffect } from "react";
-import Link from "next/link";
-import "./style.css";
 import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import "./style.css";
 
 export function Header() {
   const [top, setTop] = useState(true);
@@ -34,7 +34,7 @@ export function Header() {
               </Link>
             </div>
             <nav className={`nav ${top && "nav-fixed"}`}>
-              <Link href="/" className="text-gradient">Home</Link>
+              <Link href="/#home" className="text-gradient">Home</Link>
               <Link href="/#servicos" className="text-gradient">Serviços</Link>
               <Link href="/#contatos" className="text-gradient">Contatos</Link>
             </nav>

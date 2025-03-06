@@ -60,36 +60,19 @@
 }
 
 .nav {
-  @apply flex items-center gap-4;
+  @apply flex items-center gap-12;
 }
 
-/* Gradiente para o texto */
 .text-gradient {
-  @apply text-2xl font-semibold flex items-center py-4 px-2 hover:transform hover:scale-110 hover:font-bold transition-all duration-700;
-  background-image: radial-gradient(
-    circle,
-    #e9a247,
-    #f28849,
-    #f66d55,
-    #f25167,
-    #e6397d,
-    #d63d95,
-    #c046ab,
-    #a152bc,
-    #8165ca,
-    #5d74d0,
-    #377fce,
-    #0d87c7
-  );
+  @apply text-2xl font-semibold flex items-center py-4 px-2 hover:transform hover:scale-110 hover:font-bold transition-all duration-700 bg-slate-200;
   background-size: 200% 100%;
-  -webkit-background-clip: text; /* Faz o gradiente ficar dentro do texto */
-  color: transparent; /* Deixa o texto transparente para mostrar o gradiente */
+  -webkit-background-clip: text;
+  color: transparent;
   transition: background-position 0.5s ease, color 0.5s ease;
 }
 
-/* Efeito de movimentação do gradiente */
 .text-gradient:hover {
   @apply transition-all duration-700;
-  background-position: 100% 50%; /* Mover o gradiente quando o hover for aplicado */
-  color: white; /* O texto fica branco quando o hover acontecer */
+  background-position: 100% 50%;
+  color: white;
 }
