@@ -24,7 +24,7 @@ export function Header() {
         <div className="container">
           <div className="content">
             <div className="content-logo">
-              <Link href="/">
+              <Link href="/#home">
                 <Image
                   src="/image.webp"
                   alt="Logo"
@@ -34,9 +34,9 @@ export function Header() {
               </Link>
             </div>
             <nav className={`nav ${top && "nav-fixed"}`}>
-              <Link href="/#home" className="text-gradient">Home</Link>
               <Link href="/#servicos" className="text-gradient">Serviços</Link>
               <Link href="/#contatos" className="text-gradient">Contatos</Link>
+              <Link href="/#sobre" className="text-gradient">Sobre</Link>
             </nav>
           </div>
         </div>
